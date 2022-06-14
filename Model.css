@@ -1,37 +1,54 @@
-.judul{
+.judul {
     color: white;
     font-size: 40px;
     line-height: 2em;
 }
-.judul:hover{
+
+.judul:hover {
     color: #FFA500;
 }
-.menu{
+
+a {
+    color: white;
+    /* blue colors for links too */
+    text-decoration: none;
+    /* no underline */
+}
+
+.title:hover {
+    color: #FFA500;
+}
+
+.menu {
     color: white;
     font-size: 18px;
     background: none;
-	border: none;
-	padding: 0;
+    border: none;
+    padding: 0;
 }
 
-.menu:hover{
+.menu:hover {
     color: #FFA500;
 }
 
-.menu:active{
+.menu:active {
     color: #FFA500;
 }
-.card{
+
+.card {
     border-radius: 20px;
     background-color: #637EB2;
 }
-.card-body{
+
+.card-body {
     border-radius: 20px;
 }
-.card-title{
+
+.card-title {
     color: white;
 }
-img{
+
+img {
     color: white;
     border-radius: 20px;
 }
