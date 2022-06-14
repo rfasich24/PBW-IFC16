@@ -76,7 +76,7 @@
                 $.get("db.php?begin=" + page, function(response) {
                     $.each(response, function(key, value) {
                         $("#data").append(
-                            "<div class='col-md-3 mb-4'>" + "<a href='detail.php?film_id=" + value.ProductID + "'>" +
+                            "<div class='col-md-3 mb-4'>" + "<a href='details.php?id=" + value.ProductID + "'>" +
                             "<div class='card'>" +
                             "<img src='https://static.wikia.nocookie.net/genshin-impact/images/a/ad/Item_Tofu.png/revision/latest?cb=20220521075420&path-prefix=id' alt='Gambar" + value.ProductName + "' />" +
                             "<div class='container'>" +
