@@ -6,10 +6,6 @@
 .judul:hover{
     color: #FFA500;
 }
-a.button{
-    text-decoration: none;
-    color: initial;
-}
 a{
     text-decoration: none;
     color: white;
@@ -20,16 +16,21 @@ a{
 	border: none;
 	padding: 0;
 }
-.bi{
-    text-decoration: none;
-    color: white;
+button{
     background: none;
 	border: none;
+}
+.bi{
+    background: none;
+	border: none;
+    color: white;
     padding: 0;
 }
 .bi:hover{
     text-decoration: none;
     color: #1F4690;
+    background: none;
+	border: none;
 }
 .search{
     margin-left: 60em;
@@ -55,23 +56,30 @@ a{
 .card{
     border-radius: 20px;
     background-color: #637EB2;
-    padding: 0;
-    margin: 0;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.card:hover{
+    box-shadow: 0 5px 20px 0 rgba(0,0,0,0.2);
+    transform: translateY(-0.9em);
 }
 .card-body{
     border-radius: 20px;
 }
+.btn{
+    color: rgb(0, 0, 0);
+    transition-duration: 0.3s;
+}
+.btn:hover{
+    background-color:black; /* Green */
+    color: white;
+}
 .card-title{
     font-size: 25px;
     color: white;
-    text-decoration: none;
 }
 .card-info{
     color: white;
-}
-
-.card:hover {
-    transform: scale(1.08, 1.08);
 }
 img{
     color: white;
