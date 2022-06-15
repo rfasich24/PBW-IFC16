@@ -13,7 +13,7 @@
                         <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
                     </div>
                     <label for="CategoryID" class="form-label">Category</label>
-                    <select class="form-select" id="CategoryID" name="CategoryID" aria-label="Default select example" required="required">
+                    <select class="form-select" id="CategoryID" name="CategoryID" aria-label="Default select example">
                         <option value="">-</option>
                         <option value="1">Beverages</option>
                         <option value="2">Condiments</option>
@@ -26,24 +26,24 @@
                     </select>
                     <div class="mt-3">
                         <label for="UnitPrice" class="form-label">Price</label>
-                        <input type="number" class="form-control" id="UnitPrice" name="UnitPrice" min="0" required="required">
+                        <input type="number" class="form-control" id="UnitPrice" name="UnitPrice" min="0" value="0">
                     </div>
                     <div class="mt-3">
                         <label for="UnitsInStock" class="form-label">Stock</label>
-                        <input type="number" class="form-control" id="UnitsInStock" name="UnitsInStock" min="0" required="required">
+                        <input type="number" class="form-control" id="UnitsInStock" name="UnitsInStock" min="0" value="0">
                     </div>
                     <div class="mt-3">
                         <label for="QuantityPerUnit" class="form-label">Quantity per Unit</label>
-                        <input type="number" class="form-control" id="QuantityPerUnit" name="QuantityPerUnit" min="0" required="required">
+                        <input type="text" class="form-control" id="QuantityPerUnit" name="QuantityPerUnit">
                     </div>
                     <div class="mt-3">
                         <label for="inputUnit" class="form-label">Unit on order</label>
-                        <input type="number" class="form-control" id="UnitsOnOrder" name="UnitsOnOrder" min="0" required="required">
+                        <input type="number" class="form-control" id="UnitsOnOrder" name="UnitsOnOrder" min="0" value="0">
                     </div>
                     <div class="mt-3">
                         Discontinued
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="Discontinued" id="Discontinued" value="1" checked>
+                            <input class="form-check-input" type="radio" name="Discontinued" id="Discontinued" value="1" required="required" checked>
                             <label class="form-check-label" for="DiscontinuedTrue">
                             True
                         </label>
@@ -57,7 +57,7 @@
                     </div>
                     <div class="mt-3">
                         <label for="SupplierID" class="form-label">Supplier</label>
-                        <select class="form-select" id="SupplierID" name="SupplierID" aria-label="Default select example" required="required">
+                        <select class="form-select" id="SupplierID" name="SupplierID" aria-label="Default select example">
                         <option value="">-</option>
                         <option value="1">Exotic Liquids</option>
                         <option value="2">New Orleans Cajun Delights</option>
