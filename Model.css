@@ -69,6 +69,10 @@ a{
 .card-info{
     color: white;
 }
+
+.card:hover {
+    transform: scale(1.08, 1.08);
+}
 img{
     color: white;
     border-radius: 20px;
