@@ -1,7 +1,9 @@
+<?php
+require('form_tambah.html')
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-
-    
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -28,12 +30,12 @@
             </div>
         </div>
     </nav>
-    <section>
+    <section class="konten">
         <div class="container mt-4">
             <table>
                 <tr>
                     <td>
-                        <button class="bi"><svg xmlns="http://www.w3.org/2000/svg" width="60" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                        <button data-bs-toggle="modal" data-bs-target="#create" class="bi"><svg xmlns="http://www.w3.org/2000/svg" width="60" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
                                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
                             </svg></button>
                     </td>
@@ -63,7 +65,8 @@
             </div>
         </div>
     </section>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
@@ -98,5 +101,4 @@
         });
     </script>
 </body>
-
 </html>
