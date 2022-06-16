@@ -114,5 +114,13 @@
                 $("#SupplierID").append("<option value='" + value.SupplierID + "'>" + value.CompanyName + "</option>");
             })
         });
+        $("form").submit(function(event) {
+            event.preventDefault();
+            var data = $(this).serialize();
+            $.post("products.php?action=create", data, function(response) {
+                alert("Data Film Berhasil Ditambahkan")
+                window.location.href = "index.php"
+            })
+        });
     });
 </script>
