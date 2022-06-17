@@ -65,12 +65,34 @@ class Northwind
         }
         $sql->close();
     }
+
+    function delete($ProductID)
+    {
+        $query = "DELETE FROM products WHERE ProductID=?";
+        $sql = $this->db->prepare($query);
+        $sql->bind_param(
+            'i',//sid
+            $ProductID
+        );
+        try {
+            $sql->execute();
+        } catch (\Exception $e) {
+            $sql->close();
+            http_response_code(500);
+            die($e->getMessage());
+        }
+        $sql->close();
+    }
 }
 // Methode untuk membaca inputan user
 $Northwind = new Northwind();
 switch ($_GET['action']){
     case 'create':
         $Northwind->create($_POST);
+        break;
+    case 'delete':
+        $Northwind->delete($_GET['ProductID']);
+        header("Location:". $_SERVER['HTTP_REFERER']);
         break;
     default:
         $Northwind->read();

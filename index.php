@@ -84,7 +84,8 @@ require('form_tambah.html')
                             "<div class='card'>" +
                             "<img src='https://static.wikia.nocookie.net/genshin-impact/images/a/ad/Item_Tofu.png/revision/latest?cb=20220521075420&path-prefix=id' alt='Gambar" + value.ProductName + "' />" + 
                             "<div class='container'>" +
-                            "<div class='card-body'>" + "<button class='btn btn-warning'>" + "<i class='bi bi-pencil-square'></i></button>" + "<button class='btn btn-danger' style='margin-left: 1em;'>" + "<i class='bi bi-trash'></i></button>" +
+                            "<div class='card-body'>" + "<button class='btn btn-warning'>" + "<i class='bi bi-pencil-square'></i></button>" + 
+                            "<a href='products.php?action=delete&ProductID="+value.ProductID+"'<button class='btn btn-danger' style='margin-left: 1em;'>" + "<i class='bi bi-trash'></i></button>" +
                             "<div class='row mt-2'>" + "</div>" + "<a href='details.php?id=" + value.ProductID + "'>" +
                             "<div class='col-14 ms-0'>" + 
                             "<h4 class='card-title'>" + value.ProductName + 
