@@ -17,7 +17,7 @@
 </head>
 
 <body style="background-color: #FFA500;">
-    <nav class="navbar1 navbar navbar-light" style="background-color: #1f4690">
+<nav class="navbar1 navbar navbar-light" style="background-color: #1f4690">
         <div class="container" style="padding-right: 1px">
             <h1 class="judul"><b>Northwind</b></h1>
             <div class="menu" style="color: white">
@@ -28,7 +28,7 @@
                     <button class="menu"><a class="menu" href="customers.php">Customers</a></button>
                 </h5>
                 <h5 style="display: inline">
-                    <button class="menu" href="#">Employee</button>
+                    <button class="menu"><a class="menu" href="about_us.html">About us</a></button>
                 </h5>
             </div>
         </div>
