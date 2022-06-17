@@ -31,7 +31,7 @@ require('form_tambah.html')
                     <button class="menu"><a class="menu" href="customers.php">Customers</a></button>
                 </h5>
                 <h5 style="display: inline">
-                    <button class="menu" href="#">About us</button>
+                    <button class="menu"><a class="menu" href="about_us.html">About us</a></button>
                 </h5>
             </div>
         </div>
@@ -77,7 +77,7 @@ require('form_tambah.html')
         $(document).ready(function() {
             $("#more").click(function() {
                 $(this).html("Loading...").attr("disabled", "disabled");
-                $.get("products.php?action=read&begin=" + page, function(response) {
+                $.get("db.php?begin=" + page, function(response) {
                     $.each(response, function(key, value) {
                         $("#data").append(
                             "<div class='col-md-3 mb-4'>" + 
