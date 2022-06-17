@@ -48,7 +48,7 @@
                                 <div class="col-8 ms-0"><h6 class="card-info">Stock: <?=$row["UnitsInStock"]?></h6></div>
                                 <div class="col-8 ms-0"><h6 class="card-info">Price: <?=$row["UnitPrice"]?></h6></div>
                                 <div class="col-8 ms-0"><h6 class="card-info">Category: <?=$row["CategoryName"]?></h6></div>
-                                <div class="col-8 ms-0"><h6 class="card-info">Description: <?=$row["Description"]?></h6></div>
+                                <div class="col-12 ms-0"><h6 class="card-info">Category Description: <?=$row["Description"]?></h6></div>
                                 <div class="col-8 ms-0"><h6 class="card-info">Quantity Per-Unit: <?=$row["QuantityPerUnit"]?></h6></div>
                                 <div class="col-8 ms-0"><h6 class="card-info">Unit On Order:  <?=$row["UnitsOnOrder"]?></h6></div>
                                 <div class="col-8 ms-0"><h6 class="card-info">Discontinued: <?=$row["Discontinued"]?></h6></div>
