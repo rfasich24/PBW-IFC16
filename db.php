@@ -11,14 +11,14 @@ if ($db->connect_error) {
     die("Connection failed: {$db->connect_error}");
 }
 
-$begin = isset($_GET['begin']) ? $_GET['begin']: 0;
-$sql = "SELECT * FROM products ORDER BY ProductName asc limit {$begin},12";
-$result = $db -> query($sql);
-$data_json = [];
-while ($data = $result->fetch_assoc()){
-    array_push($data_json, $data);
-}
-header("Content-Type: application/json");
-echo json_encode($data_json);
+// $begin = isset($_GET['begin']) ? $_GET['begin']: 0;
+// $sql = "SELECT * FROM products ORDER BY ProductName asc limit {$begin},12";
+// $result = $db -> query($sql);
+// $data_json = [];
+// while ($data = $result->fetch_assoc()){
+//     array_push($data_json, $data);
+// }
+// header("Content-Type: application/json");
+// echo json_encode($data_json);
 
 
